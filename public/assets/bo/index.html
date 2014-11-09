@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!doctype html>
+<!-- 
+320 and Up boilerplate extension
+Andy Clarke http://about.me/malarkey
+Keith Clark http://twitter.com/keithclarkcouk
+Version: 2
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+License: http://creativecommons.org/licenses/MIT
+-->
+<!--[if IEMobile 7]>
+    <html class="no-js mac wf-ok ie iem7 oldie">
+<![endif]-->
+<!--[if lt IE 7]>
+    <html class="no-js mac wf-ok ie ie6 oldie" lang="pt">
+<![endif]-->
+<!--[if (IE 7)&!(IEMobile)]>
+    <html class="no-js mac wf-ok ie ie7 oldie" lang="pt">
+<![endif]-->
+<!--[if (IE 8)&!(IEMobile)]>
+    <html class="no-js mac wf-ok ie ie8 oldie" lang="pt">
+<![endif]-->
+<!--[if gte IE 9]>
+    <html class="no-js ie ie9plus mac wf-ok" lang="pt">
+<![endif]-->
+<!--[if gt IEMobile 7]>
+    <html class="no-js ie ie9plus mac wf-ok" lang="pt">
+<![endif]-->
+<!--[if !IE]> -->
+<html class="no-js mac wf-ok" lang="pt">
+<!-- <![endif]-->
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title>serahana</title>
+
+        <!--MS-->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+        <!-- i'm so meta! -->
+                <meta name="description" content="serahana">
+                <meta name="author" content="See humans.txt">
+                <meta name="x-frontend" content="sapo-hp04">
+                <link rel="author" href="humans.txt">
+			<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css" />
+	<body>
+	</head>
+	<body>
+		<div class="container">
+			<div class="main">
+				<form class="cbp-mc-form" method="post" action="show.php" target="_blank">
+					<div class="cbp-mc-column">
+						<label for="date">date</label>
+						<input type="text" class="date" name="date" placeholder="2014/01/01">
+
+	  					<label for="author">author</label>
+	  					<input type="text" class="author" name="author" placeholder="jon@doe.com">
+
+	  					<label for="title">title</label>
+	  					<input type="text" class="title" name="title" placeholder="title">
+
+	  				</div>
+	  				<div class="cbp-mc-column">
+	  					<label for="status">status</label>
+	  					<select class="status" name="status">
+	  						<option value="publish">publish</option>
+	  						<option value="publish">inherit</option>
+	  					</select>
+
+	  					<label for="priority">priority</label>
+	  					<select class="priority" name="priority">
+	  						<option value="5">highest</option>
+	  						<option value="4">high</option>
+	  						<option value="3">medium</option>
+	  						<option value="2">low</option>
+	  						<option value="1">lowest</option>
+	  					</select>
+
+	  					<label for="type">type</label>
+	  					<select class="type" name="type">
+	  						<option value="post">post</option>
+	  						<option value="page">page</option>
+	  						<option value="attachment">attachment</option>
+	  					</select>
+
+	  					<label for="mime_type">mime_type</label>
+	  					<select class="mime_type" name="mime_type">
+	  						<option value="text/html">text/html</option>
+	  						<option value="image/jpeg">image/jpeg</option>
+	  						<option value="image/png">image/png</option>
+	  						<option value="image/gif">image/gif</option>
+	  					</select>
+		 			</div>
+	  				<div class="cbp-full-column">
+						<label for="content">content</label>
+						<textarea class="content" name="content" style="resize: none; height:400px;"></textarea>
+						<label for="excerpt">excerpt</label>
+						<textarea class="excerpt" name="excerpt" style="resize: none; height:200px;"></textarea>
+	  				</div>
+					<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit" type="submit" value="Send your data" /></div>
+ 				</form>
+
+ 			</div>
+
+
+		</div>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/jquery.datetimepicker.js"></script>
+<script>
+	$('.date').datetimepicker({
+		dayOfWeekStart : 1,
+		lang:'en',
+		startDate:	'2014/01/01'
+	});
+</script>	
+	</body>
+</html>

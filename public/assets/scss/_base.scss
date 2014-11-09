@@ -1,0 +1,134 @@
+//basic colors
+$black         	: #000000;
+$gray          	: #808080;
+$silver        	: #C0C0C0;
+$white         	: #FFFFFF;
+$maroon        	: #800000;
+$red           	: #FF0000;
+$olive         	: #808000;
+$yellow        	: #FFFF00;
+$green         	: #008000;
+$lime          	: #00FF00;
+$teal          	: #008080;
+$aqua          	: #00FFFF;
+$navy          	: #000080;
+$blue          	: #0000FF;
+$purple        	: #800080;
+$fuchsia       	: #FF00FF;
+
+//flat colors
+$turquoise     	: #1abc9c;
+$flat_emerald	: #2ecc71;
+$peter_river   	: #3498db;
+$amethyst      	: #9b59b6;
+$wet_asphalt   	: #34495e;
+$green_sea     	: #16a085;
+$nephritis     	: #27ae60;
+$belize_hole   	: #2980b9;
+$wisteria      	: #8e44ad;
+$midnight_blue 	: #2c3e50;
+$sun_flower    	: #f1c40f;
+$carrot        	: #e67e22;
+$alizarin      	: #e74c3c;
+$clouds        	: #ecf0f1;
+$concrete      	: #95a5a6;
+$orange        	: #f39c12;
+$pumpkin       	: #d35400;
+$pomegranate   	: #c0392b;
+$silver        	: #bdc3c7;
+$asbestos      	: #7f8c8d;
+$flat_red      	: #ff6f69;
+$flat_green     : #4dbc84;
+$above_yellow	: #F9D423;
+$focus_yellow	: #fff9b2;
+
+//pantone colors of the year
+
+//2014
+$radiant_orchid: rgba(177,99,163,1);
+//2014
+$radiant_orchid: rgba(177,99,163,1);
+//2014
+$radiant_orchid: rgba(177,99,163,1);
+//2014
+$radiant_orchid: rgba(177,99,163,1);
+//2014
+$radiant_orchid: rgba(177,99,163,1);
+//2014
+$radiant_orchid: rgba(177,99,163,1);
+//2014
+$radiant_orchid: rgba(177,99,163,1);
+//2014
+$radiant_orchid: rgba(177,99,163,1);
+//2013
+$emerald: rgba(0,152,16,1);
+//2014
+$radiant_orchid: rgba(177,99,163,1);
+
+//website, app colors
+
+$serahana_grey      : #f2f2f2;
+$serahana_text_grey      : #252525;
+$serahana_text_green     : #2ECC71;
+$serahana_text_dark_green     : #1E824C;
+$facebook_blue      : #3B5999;
+$twitter_blue 		: #4099FF;
+$gplus_grey 		: #3A3A3A;
+$gplus_red 			: #D34836;
+$skype_blue 		: #12A5F4;
+$youtube_red 		: #cd201f;
+
+//@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic);
+/*font-family: 'Ubuntu', sans-serif; */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic);
+/* font-family: 'Open Sans', sans-serif; */
+//@import url(http://fonts.googleapis.com/css?family=Arapey:400italic,400);
+/* font-family: 'Arapey', serif; */
+//@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,600);
+/*font-family: 'Josefin Sans', sans-serif; */
+//@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+/*font-family: 'Old Standard TT', serif;*/
+//@import url(http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,900italic,400,700,900);
+// font-family: 'Alegreya', serif;
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,900);
+// font-family: 'Roboto', sans-serif;
+
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:700italic,400italic,400,700);
+// font-family: 'Vollkorn', serif;
+
+@import url(http://fonts.googleapis.com/css?family=Cutive);
+// font-family: 'Cutive', serif;
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{ $name }: #{ $argument };
+  	 -moz-#{ $name }: #{ $argument };
+      -ms-#{ $name }: #{ $argument };
+       -o-#{ $name }: #{ $argument };
+          #{ $name }: #{ $argument };
+}
+
+@mixin calc($prop, $val) {
+  @each $pre in -webkit-, -moz- {
+    #{$prop}: $pre + calc(#{$val});
+  }
+  #{$prop}: calc(#{$val});
+}
+
+// RANGES
+// We use these functions to define ranges for various things, like media queries.
+@function lower-bound($range){
+    @if length($range) <= 0 {
+        @return 0;
+    }
+    @return nth($range,1);
+}
+
+@function upper-bound($range) {
+    @if length($range) < 2 {
+        @return 999999999999;
+    }
+    @return nth($range, 2);
+}
+// Media Query Ranges
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
